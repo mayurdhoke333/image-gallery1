@@ -1,0 +1,40 @@
+body
+{
+    margin:0;
+}
+.row
+{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.row .column
+{
+    flex: 33.3%;
+    width:auto;
+    height:100%;
+    padding: 0 4px;
+    overflow: hidden;
+    
+
+}
+.column img
+{
+    margin: 2%;
+    width:100%;
+    height:100%;
+    filter: grayscale(1) brightness(0.5);
+    transition: 0.5s linear;
+    
+}
+.column img:hover
+{
+    filter: grayscale(0) brightness(1);
+}
+@media(max-width:750px)
+{
+    .row .column
+     {
+         flex:50%;
+     }
+}
